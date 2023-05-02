@@ -1,0 +1,28 @@
+.item {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 600;
+  justify-content: space-between;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+.item__number,
+.item__name {
+  margin: 0 10px 0 0;
+}
+
+.item__btn {
+  width: 120px;
+  padding: 5px 10px;
+  background-color: #ff92009e;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  box-shadow: 4px 2px 5px 0px rgba(0, 0, 0, 0.37);
+}

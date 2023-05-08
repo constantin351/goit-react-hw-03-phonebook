@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Form from './Form';
+// import Form from './Form';
+import ContactAddForm from './Form';
 import Filter from './Filter';
 import ContactList from './ContactList';
 import { nanoid } from 'nanoid';
@@ -11,7 +12,7 @@ class App extends Component {
   };
 
   // Local Storage
-  //
+  // см 1ое видео 55ая мин
   componentDidMount() {
     const LScontacts = localStorage.getItem('contactsList');
     const LSparsedContacts = JSON.parse(LScontacts);
@@ -65,7 +66,8 @@ class App extends Component {
       <div className="wrapper">
         <h1>Phonebook</h1>
 
-        <Form onSubmit={this.onSubmitHandler} />
+        {/* <Form onSubmit={this.onSubmitHandler} /> */}
+        <ContactAddForm onSubmit={this.onSubmitHandler} />
 
         <h2>Contacts</h2>
 
